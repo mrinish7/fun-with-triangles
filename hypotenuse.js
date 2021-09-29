@@ -11,7 +11,7 @@ function calculatehypo(a, b) {
 function callHypo() {
     const sumOfSquares = calculatehypo(Number(sideInput[0].value), Number(sideInput[1].value));
     const lengthOfHypo = Math.sqrt(sumOfSquares);
-    outputMsg.innerText = "the length of hypotense is " + lengthOfHypo 
+    outputMsg.innerText = "the length of hypotense is " + lengthOfHypo.toFixed(2) 
 }
 
 hypoBtn.addEventListener("click", callHypo)
